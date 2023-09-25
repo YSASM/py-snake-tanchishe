@@ -120,10 +120,6 @@ def PMap():
                 print("*",end='')
         print('0')
     print("000000000000000000000000000000000000000000\n"+"              "+str(count))
-def RMap():
-    while True:
-        PMap()
-        sleep(T)
 def Foud():
     global arr,flage
     while True:
@@ -133,10 +129,6 @@ def Foud():
             if arr[b][a]!=1:
                 arr[b][a]=2
                 flage=True
-            else:
-                Foud()
-        else:
-            pass
         sleep(T)
 def Die():
     os.system("cls")
